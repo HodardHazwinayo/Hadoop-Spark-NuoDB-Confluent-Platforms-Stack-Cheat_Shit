@@ -1,6 +1,6 @@
 # Hadoop Spark NuoDB Confluent Platforms Stack Cheat Shit
 
-## Browse your favorite Big Data Stack you want to use with detailed a cheat chit Note: This cheat chit is for only Linux server espacialy RHEL / Centos 7.x Plus
+### Browse your favorite Big Data Stack you want to use with detailed a cheat chit Note: This cheat chit is for only Linux server espacialy RHEL / Centos 7.x Plus
 
 1. [Hadoop](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Hadoop%20Installations%20Processes.md)
 2. [Apache Spark](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Spark%20installation%20and%20configurations%20on%20Centos%20Linux.md)
