@@ -15,13 +15,13 @@ REST Proxy                                    	8082
 Schema Registry REST API            			8081
 ZooKeeper                                    	2181
 
-firewall-cmd --zone=public --add-port=9092/tcp --permanent
-firewall-cmd --zone=public --add-port=9021/tcp --permanent
-firewall-cmd --zone=public --add-port=8083/tcp --permanent
-firewall-cmd --zone=public --add-port=8082/tcp --permanent
-firewall-cmd --zone=public --add-port=8081/tcp --permanent
-firewall-cmd --zone=public --add-port=2181/tcp --permanent
-firewall-cmd --reload
+1. firewall-cmd --zone=public --add-port=9092/tcp --permanent
+2. firewall-cmd --zone=public --add-port=9021/tcp --permanent
+3. firewall-cmd --zone=public --add-port=8083/tcp --permanent
+4. firewall-cmd --zone=public --add-port=8082/tcp --permanent
+5. firewall-cmd --zone=public --add-port=8081/tcp --permanent
+6. firewall-cmd --zone=public --add-port=2181/tcp --permanent
+7. firewall-cmd --reload
 
 ## Confluent installations processes step by step
 
