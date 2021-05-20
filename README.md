@@ -1,4 +1,4 @@
-# Hadoop_Spark_NuoDB_Confluent_Platforms_Stack_Cheat_Shit
+# Hadoop Spark NuoDB Confluent Platforms Stack Cheat Shit
 
 Browse your favorite Big Data Stack you want to use with detailed a cheat chit
 Note: This cheat chit is for only Linux server espacialy RHEL / Centos 7.x Plus
