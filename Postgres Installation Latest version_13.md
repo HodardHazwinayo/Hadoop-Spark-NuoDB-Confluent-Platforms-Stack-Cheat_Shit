@@ -31,9 +31,34 @@ Creating a database cluster consists of creating the directories in which the da
 2. Initializing database ... OK
 
 ## Type below command to start PostgreSQL server:
-sudo systemctl start postgresql-13
-sudo systemctl enable postgresql-13
-sudo systemctl status postgresql-13
+1. sudo systemctl start postgresql-13
+2. sudo systemctl enable postgresql-13
+3. sudo systemctl status postgresql-13
+
+## Creating PostgreSQL Roles and Databases
+#### Let's begin with the switching over to the postgres account:
+sudo -i -u postgres
+#### Type below to access a postgres prompt:
+psql
+#### This will log you into the PostgreSQL prompt
+postgres=#
+#### Type below to list default databases
+postgres=# \list
+#### Type below to logout from the postgres prompt:
+postgres=# \q
+#### Type below to exit from the postgres user shell
+-bash-4.2$ exit
+## Access PostgreSQL without Switching the Account
+sudo -u postgres psql
+#### Type below to logout from postgres prompt:
+postgres=# \q
+#### Creating or Removing a Role
+1. sudo -u postgres createuser --interactive
+
+2. Enter name of role to add: dboperator
+3. Shall the new role be a superuser? (y/n) y
+#### You can also interactively remove a role from the default database:
+
 
 
 
