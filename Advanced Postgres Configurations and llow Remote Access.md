@@ -32,9 +32,9 @@ sudo systemctl status postgresql-13
 ## Troubleshoots Cheat shit
 1. [Installing the PL/pgSQL Debugger Extension pldbgapi for pgAdmin 3/4 on PostgreSQL 9.4 plus and Linux](https://gist.github.com/rdrey/37bc41a2876b2be103768f5812d80048)
 2. [Install pldebugger for postgres](https://centos.pkgs.org/7/postgresql-10-x86_64/pldebugger10-1.1-1.rhel7.x86_64.rpm.html)
-1. Add PostgreSQL 10 repository as described on its homepage:
+3. Add PostgreSQL 10 repository as described on its homepage:
 https://yum.postgresql.org/repopackages.php
-2. Install pldebugger10 rpm package if postres is 10:
+4. Install pldebugger10 rpm package if postres is 10:
 yum install pldebugger10
 #### Or if postgres13 use the below command:
 1. yum install pldebugger13
