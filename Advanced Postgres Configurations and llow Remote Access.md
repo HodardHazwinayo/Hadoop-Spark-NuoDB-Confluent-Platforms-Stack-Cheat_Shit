@@ -15,6 +15,12 @@ To make the PostgreSQL accept outside connection, you will need to make followin
 6. host    all             all             your_client_machine2_ip/32               md5
 7. host    all             all             your_client_machine3_ip/32               md5
 
+#### Or Accept from trusted subnet
+1. host all all x.x.0.0/32 md5 [Less number of connected machines]
+2. host all all x.x.0.0/24 md5 [Medium number of connected machines]
+3. host all all x.x.0.0/16 md5 [Recommended and High number of connected machines]
+
+
 #### Update Firewall Rules
 sudo firewall-cmd --add-service=postgresql --permanent
 sudo firewall-cmd --reload
