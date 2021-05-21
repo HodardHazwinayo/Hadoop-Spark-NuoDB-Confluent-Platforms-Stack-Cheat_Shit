@@ -8,5 +8,5 @@
 4. [NuoDB Distributed Database](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/NuoDB%20Database%20Installation%20Processes%20on%20Centos%20Linux.md)
 5. [NuoDB Troubleshoot](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Troubleshooting%20With%20NuoDB%20Command%20cheat%20chit.md)
 6. [NuoDB Insight Installation](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/nuodb%20insight%20installation.md)
-
+7. [Postgres Installation process in Centos7/8]()
 # Good Luck
