@@ -9,7 +9,7 @@
 5. [NuoDB Troubleshoot](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Troubleshooting%20With%20NuoDB%20Command%20cheat%20chit.md)
 6. [NuoDB Insight Installation](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/nuodb%20insight%20installation.md)
 7. [Postgres Installation process in Centos7/8](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Postgres%20Installation%20Latest%20version_13.md)
-8. [Advanced Postgres Configurations and llow Remote Access ](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Advanced%20Postgres%20Configurations%20and%20llow%20Remote%20Access.md)
+8. [Advanced Postgres Configurations and allow Remote Access ](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Advanced%20Postgres%20Configurations%20and%20llow%20Remote%20Access.md)
 
 # Good Luck
 
