@@ -13,15 +13,15 @@ sudo timedatectl set-timezone Africa/Kigali
 	sudo dnf install epel-release
 	sudo dnf config-manager --set-enabled PowerTools
 ## Install PostgreSQL
-	### For CentOS 7, type below command to install PostgreSQL release 13:
-		sudo yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-		sudo yum -y install postgresql13 postgresql13-server
-	### For CentOS 8, type below command to install PostgreSQL release 13:
-		sudo dnf install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-		sudo dnf -y install yum-utils
-		sudo yum-config-manager --enable pgdg13
-		sudo dnf -qy module disable postgresql
-		sudo dnf -y install postgresql13 postgresql13-server
+### For CentOS 7, type below command to install PostgreSQL release 13:
+	sudo yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+	sudo yum -y install postgresql13 postgresql13-server
+### For CentOS 8, type below command to install PostgreSQL release 13:
+	sudo dnf install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+	sudo dnf -y install yum-utils
+	sudo yum-config-manager --enable pgdg13
+	sudo dnf -qy module disable postgresql
+	sudo dnf -y install postgresql13 postgresql13-server
 ## Initialize PostgreSQL Cluster
 A PostgreSQL database cluster is a collection of databases that are managed by a single server instance. 
 Creating a database cluster consists of creating the directories in which the database data will be placed, generating the shared catalog tables, and creating the template and postgres databases.
