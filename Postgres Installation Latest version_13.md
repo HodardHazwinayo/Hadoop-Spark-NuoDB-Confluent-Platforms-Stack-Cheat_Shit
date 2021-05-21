@@ -27,8 +27,8 @@ A PostgreSQL database cluster is a collection of databases that are managed by a
 Creating a database cluster consists of creating the directories in which the database data will be placed, generating the shared catalog tables, and creating the template and postgres databases.
 
 ## Type below command to initialize PostgreSQL database cluster:
-sudo /usr/bin/postgresql-13-setup initdb
-Initializing database ... OK
+1. sudo /usr/bin/postgresql-13-setup initdb
+2. Initializing database ... OK
 
 ## Type below command to start PostgreSQL server:
 sudo systemctl start postgresql-13
