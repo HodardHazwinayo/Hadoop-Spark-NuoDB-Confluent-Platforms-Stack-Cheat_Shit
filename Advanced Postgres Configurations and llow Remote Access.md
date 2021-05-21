@@ -25,9 +25,9 @@ sudo systemctl restart postgresql-13
 sudo systemctl status postgresql-13
 
 ## Tools Needed to access Remote PostgreSQL database
-[DBeaver](https://dbeaver.io/download/)
-[PgAdmin4](https://www.pgadmin.org/download/pgadmin-4-windows/) 
-[DbVisualizer](https://www.dbvis.com/download/12.0)
+1. [DBeaver](https://dbeaver.io/download/)
+2. [PgAdmin4](https://www.pgadmin.org/download/pgadmin-4-windows/) 
+3. [DbVisualizer](https://www.dbvis.com/download/12.0)
 
 ## Troubleshoots Cheat shit
 1. [Installing the PL/pgSQL Debugger Extension pldbgapi for pgAdmin 3/4 on PostgreSQL 9.4 plus and Linux](https://gist.github.com/rdrey/37bc41a2876b2be103768f5812d80048)
