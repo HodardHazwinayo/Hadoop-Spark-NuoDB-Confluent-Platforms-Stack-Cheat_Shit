@@ -34,7 +34,7 @@ sudo systemctl status postgresql-13
 2. [Install pldebugger for postgres](https://centos.pkgs.org/7/postgresql-10-x86_64/pldebugger10-1.1-1.rhel7.x86_64.rpm.html)
 3. Add PostgreSQL 10 repository as described on its homepage:
 https://yum.postgresql.org/repopackages.php
-4. Install pldebugger10 rpm package if postres is 10:
+4. Install pldebugger10 rpm package if postgres is 10:
 yum install pldebugger10
 #### Or if postgres13 use the below command:
 1. yum install pldebugger13
