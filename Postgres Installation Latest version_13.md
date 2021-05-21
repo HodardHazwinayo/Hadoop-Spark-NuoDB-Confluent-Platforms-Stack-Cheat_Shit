@@ -54,7 +54,6 @@ sudo -u postgres psql
 postgres=# \q
 #### Creating or Removing a Role
 1. sudo -u postgres createuser --interactive
-
 2. Enter name of role to add: dboperator
 3. Shall the new role be a superuser? (y/n) y
 #### You can also interactively remove a role from the default database:
