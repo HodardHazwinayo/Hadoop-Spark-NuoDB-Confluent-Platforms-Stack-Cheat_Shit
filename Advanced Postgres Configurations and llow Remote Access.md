@@ -46,3 +46,9 @@ yum install pldebugger10
 1. yum install pldebugger13
 2. sudo systemctl restart postgresql
 3. sudo systemctl restart postgresql-13
+## To finish pldebugger configuration on db level but not recommended on Prod env, you should follow: 
+1. Once its done we need to restart the server; then only it will imply the changes and its mandatory
+2. After that we have to execute a command on database to create the plugin for the db this command: 
+CREATE EXTENSION pldbgapi;
+### Either we can do the above script from pgadmin or from backend itself
+4. sudo systemctl restart postgresql-13
