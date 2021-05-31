@@ -6,4 +6,4 @@
 
 [Configuring MariaDB with Option Files](https://mariadb.com/kb/en/configuring-mariadb-with-option-files/)
 
-[How Do I Enable Remote Access To MySQL Database Server?] (https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
+[How Do I Enable Remote Access To MySQL Database Server?](https://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
