@@ -79,7 +79,7 @@ yum install pldebugger10
 ###### listen_address ='*'
 ###### port = desiredportnumber
 4. Change environment running assigned default port: (vi /lib/systemd/system/postgresql-13.service)
- [# Port number for server to listen on, check if the following command is available, if yes then edit according if not skip it.] (Environment=PGPORT=portnumber)
+ [# Port number for server to listen on, check if the following command is available, if yes then edit it according if not skip it.] (Environment=PGPORT=portnumber)
 5. Reload the systemd by the following cmd: (systemctl daemon-reload)
 6. Then restart the postgresql using: (systemctl restart postgresql-13 && systemctl status postgresql-13)
 
