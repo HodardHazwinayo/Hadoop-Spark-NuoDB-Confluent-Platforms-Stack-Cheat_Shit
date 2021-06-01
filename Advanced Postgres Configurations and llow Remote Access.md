@@ -66,9 +66,11 @@ yum install pldebugger10
 4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql.service**
  [# Port number for server to listen on] **Environment=PGPORT=portnumber**
 5. Reload the systemd by the following cmd: (systemctl daemon-reload)
-6. Then restart the postgresql using: **systemctl restart postgresql** and **systemctl status postgresql**
+6. Then restart the postgresql using: 
+	1. **systemctl restart postgresql** 
+	2. **systemctl status postgresql**
 
-#### B. lets start with postgresq-13.x
+#### B. lets continue with postgresq-13.x
 1. To check the listening port of postgresql **netstat -tulpn | grep LISTEN**
 2. Open the desired port under firewall-cmd and add the service of postgres on firewall-cmd
 	1. **systemctl start firewalld** and **systemctl status firewalld**
@@ -81,7 +83,9 @@ yum install pldebugger10
 4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql-13.service**
  [# Port number for server to listen on, check if the following command is available, if yes then edit it according if not skip it.] (Environment=PGPORT=portnumber)
 5. Reload the systemd by the following cmd: **systemctl daemon-reload**
-6. Then restart the postgresql using: **systemctl restart postgresql-13** && **systemctl status postgresql-13**
+6. Then restart the postgresql using: 
+	1. **systemctl restart postgresql-13** 
+	2. **systemctl status postgresql-13**
 
 ## Reference
 [Need help to change postgresql port on CentOS 7](https://stackoverflow.com/questions/25148693/need-help-to-change-postgresql-port-on-centos-7/25152682)
