@@ -65,7 +65,7 @@ yum install pldebugger10
 	2. **port = desiredportnumber**
 4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql.service**
  [# Port number for server to listen on] **Environment=PGPORT=portnumber**
-5. Reload the systemd by the following cmd: (systemctl daemon-reload)
+5. Reload the systemd by the following cmd: **systemctl daemon-reload**
 6. Then restart the postgresql using: 
 	1. **systemctl restart postgresql** 
 	2. **systemctl status postgresql**
