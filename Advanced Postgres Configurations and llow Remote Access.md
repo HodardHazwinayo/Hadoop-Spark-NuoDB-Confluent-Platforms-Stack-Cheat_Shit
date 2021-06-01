@@ -1,4 +1,4 @@
-# Advanced Postgres Configurations and llow Remote Access
+# Advanced Postgres Configurations and allow Remote Access
 By default PostgreSQL access is bound to localhost only. 
 To make the PostgreSQL accept outside connection, you will need to make following changes in the configuration files:
 1. sudo vi /var/lib/pgsql/13/data/postgresql.conf
