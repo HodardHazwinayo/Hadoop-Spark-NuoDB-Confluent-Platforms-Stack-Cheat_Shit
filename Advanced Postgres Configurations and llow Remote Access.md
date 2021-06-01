@@ -52,3 +52,4 @@ yum install pldebugger10
 ##### CREATE EXTENSION pldbgapi;
 ### Either we can do the above script from pgadmin or from backend itself
 3. sudo systemctl restart postgresql-13
+### How to change default port of postgresq-9.2.x or postgresql-13.x
