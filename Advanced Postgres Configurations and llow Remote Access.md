@@ -56,13 +56,13 @@ yum install pldebugger10
 #### A. lets start with postgresq-9.2.x
 1. To check the listening port of postgresql **netstat -tulpn | grep LISTEN**
 2. Open the desired port under firewall-cmd and add the service of postgres on firewall-cmd
-**systemctl start firewalld** and **systemctl status firewalld**
-**firewall-cmd --zone=public --add-port=portnumber/tcp --permanent**
-**firewall-cmd --zone=public --add-service=postgres --permanent**
-**firewall-cmd --reload**
+	1. **systemctl start firewalld** and **systemctl status firewalld**
+	2. **firewall-cmd --zone=public --add-port=portnumber/tcp --permanent**
+	3. **firewall-cmd --zone=public --add-service=postgres --permanent**
+	4. **firewall-cmd --reload**
 3. Uncomment and change the port number under this path: **vi /var/lib/pgsql/data/postgresql.conf**
-**listen_address ='*'**
-**port = desiredportnumber**
+	1. **listen_address ='*'**
+	2. **port = desiredportnumber**
 4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql.service**
  [# Port number for server to listen on] **Environment=PGPORT=portnumber**
 5. Reload the systemd by the following cmd: (systemctl daemon-reload)
@@ -71,13 +71,13 @@ yum install pldebugger10
 #### B. lets start with postgresq-13.x
 1. To check the listening port of postgresql **netstat -tulpn | grep LISTEN**
 2. Open the desired port under firewall-cmd and add the service of postgres on firewall-cmd
-**systemctl start firewalld** and **systemctl status firewalld**
-**firewall-cmd --zone=public --add-port=portnumber/tcp --permanent**
-**firewall-cmd --zone=public --add-service=postgres --permanent**
-**firewall-cmd --reload**
+	1. **systemctl start firewalld** and **systemctl status firewalld**
+	2. **firewall-cmd --zone=public --add-port=portnumber/tcp --permanent**
+	3. **firewall-cmd --zone=public --add-service=postgres --permanent**
+	4. **firewall-cmd --reload**
 3. Uncomment and change the port number under this path: **vi /var/lib/pgsql/13/data/postgresql.conf**
-**listen_address ='*'**
-**port = desiredportnumber**
+	1. **listen_address ='*'**
+	2. **port = desiredportnumber**
 4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql-13.service**
  [# Port number for server to listen on, check if the following command is available, if yes then edit it according if not skip it.] (Environment=PGPORT=portnumber)
 5. Reload the systemd by the following cmd: **systemctl daemon-reload**
