@@ -60,7 +60,7 @@ yum install pldebugger10
 ###### firewall-cmd --zone=public --add-port=portnumber/tcp --permanent
 ###### firewall-cmd --zone=public --add-service=postgres --permanent
 ###### firewall-cmd --reload
-3. Uncomment and change the port number under this path: (vi /var/lib/pgsql/data/postgresql.conf)
+3. Uncomment and change the port number under this path: **vi /var/lib/pgsql/data/postgresql.conf**
 ###### listen_address ='*'
 ###### port = desiredportnumber
 4. Change environment running assigned default port: (vi /lib/systemd/system/postgresql.service)
