@@ -63,10 +63,10 @@ yum install pldebugger10
 3. Uncomment and change the port number under this path: **vi /var/lib/pgsql/data/postgresql.conf**
 ###### listen_address ='*'
 ###### port = desiredportnumber
-4. Change environment running assigned default port: (vi /lib/systemd/system/postgresql.service)
- [# Port number for server to listen on] (Environment=PGPORT=portnumber)
+4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql.service**
+ [# Port number for server to listen on] **Environment=PGPORT=portnumber**
 5. Reload the systemd by the following cmd: (systemctl daemon-reload)
-6. Then restart the postgresql using: (systemctl restart postgresql && systemctl status postgresql)
+6. Then restart the postgresql using: **systemctl restart postgresql** and **systemctl status postgresql**
 
 #### B. lets start with postgresq-13.x
 1. To check the listening port of postgresql (netstat -tulpn | grep LISTEN)
@@ -75,13 +75,13 @@ yum install pldebugger10
 ###### firewall-cmd --zone=public --add-port=portnumber/tcp --permanent
 ###### firewall-cmd --zone=public --add-service=postgres --permanent
 ###### firewall-cmd --reload
-3. Uncomment and change the port number under this path: (vi /var/lib/pgsql/13/data/postgresql.conf)
+3. Uncomment and change the port number under this path: **vi /var/lib/pgsql/13/data/postgresql.conf**
 ###### listen_address ='*'
 ###### port = desiredportnumber
-4. Change environment running assigned default port: (vi /lib/systemd/system/postgresql-13.service)
+4. Change environment running assigned default port: **vi /lib/systemd/system/postgresql-13.service**
  [# Port number for server to listen on, check if the following command is available, if yes then edit it according if not skip it.] (Environment=PGPORT=portnumber)
-5. Reload the systemd by the following cmd: (systemctl daemon-reload)
-6. Then restart the postgresql using: (systemctl restart postgresql-13 && systemctl status postgresql-13)
+5. Reload the systemd by the following cmd: **systemctl daemon-reload**
+6. Then restart the postgresql using: **systemctl restart postgresql-13** && **systemctl status postgresql-13**
 
 ## Reference
 [Need help to change postgresql port on CentOS 7](https://stackoverflow.com/questions/25148693/need-help-to-change-postgresql-port-on-centos-7/25152682)
