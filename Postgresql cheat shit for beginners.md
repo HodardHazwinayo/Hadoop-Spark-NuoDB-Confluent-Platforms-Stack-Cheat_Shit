@@ -21,7 +21,7 @@
 ## A simple backup of the database
 1. Check the file if exist and how big is 
 **ls -la**
-2 . Lets take the backup and zip it for compressing the size.
+2. Lets take the backup and zip it for compressing the size.
 **pg_dump -d testdb | gzip > back.gz**
 3. Second option to take backup is to format a file in custom mode
 **pg_dump -Fc testdb > back.bk**
