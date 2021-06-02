@@ -47,9 +47,12 @@
 	4. Run the following commands **vi /backup/backup.sh** and **source /backup/backup.sh** 
 	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/scripts.png)
 	5. To test if the backup is going well
-	![]()
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/backuptest.png)
 	6. Edit crontab for taking daily and weekly backup on sunday at mid night: dow means day of week.
-	![]()
-
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/crontabfordailyandweekly.png)
+	7. References for the backup scripts in details
+		1. [Automatic cron backup of PostgreSQL database](https://txcowboycoder.wordpress.com/2011/06/03/automatic-cron-backup-of-postgresql-database/)
+		2  [Automated Backup on Linux](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux)
+## 
 
 
