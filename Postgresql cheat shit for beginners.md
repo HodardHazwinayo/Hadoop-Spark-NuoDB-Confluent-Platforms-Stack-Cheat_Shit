@@ -33,7 +33,9 @@
 2. On Linux, there is built-in option to schedule a jobs
 **crontab -e**
 3. Take daily backup at mid night, please check on the following scripts and use yours accordingly
-![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/readme.png) 
+![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/readme.png)
+	1. **# m h dom mon dow  command**
+	2. **0 0 * * * root pg_dump -Fc testdb > backup/back.bk** 
 4.  
 
 
