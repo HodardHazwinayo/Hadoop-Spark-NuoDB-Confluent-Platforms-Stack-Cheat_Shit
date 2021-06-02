@@ -28,7 +28,13 @@
 4. How to restore it accordingly 
 **pg_restore -d testdb back.bk**
 ## How to setup a backup using a simple cron jobs,
-1. 
+1. Make backup directory where you want to store a certain period of backups
+**mkdir backup**
+2. On Linux, there is built-in option to schedule a jobs
+**crontab -e**
+3. Take daily backup at mid night, please check on the following scripts and use yours accordingly
+![](Images\readme.png) 
+4.  
 
 
 
