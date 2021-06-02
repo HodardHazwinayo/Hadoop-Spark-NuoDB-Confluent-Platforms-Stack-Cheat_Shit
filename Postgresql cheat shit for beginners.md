@@ -33,7 +33,7 @@
 2. On Linux, there is built-in option to schedule a jobs
 **crontab -e**
 3. Take daily backup at mid night, please check on the following scripts and use yours accordingly
-![](Big%20Data%20Stack%20Cheat%20Shit\Images\readme.png) 
+![](C:\Users\hhazwinayo\Documents\SIT & UAT TDL_T24_TA Environment\Big Data Stack Cheat Shit\Images\readme.png) 
 4.  
 
 
