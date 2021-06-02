@@ -60,11 +60,39 @@
 	1. **createdb bench**
 	2. **pgbench -i bench**
 	3. ![]()
-	4. Tu run pgbench database, lets use our usual example:
+	4. To run pgbench database, lets use our usual example:
 		1. **pgbench bench**
 		2. Initialize the number of scale factor of approximately 10 thousands users or connections for only reading.
 			1. **pgbench -i -S 100 bench**
 			2. **pgbench -T 120 -j 2 -c 20 -S bench**
-2. 
+			3. **pgbench -j 4 -T 120  -c 20 bench**
+2. How to display config file and maximum connections etc ... of postgresql on Linux
+	1. ** psql dbname -c "show config_file"**
+	2. ** psql testdb -c "show config_file"**
+	3. ** psql testdb -c "show max_connections"**
+	4. ** psql testdb -c "show shared_buffers"**
+	
+## Configuration Tweaks 
+### Configuration calculator for PostgreSQL
+[Parameters of your system](https://pgtune.leopard.in.ua/#/)
+	1. edit the following path where postgresql.conf is
+	**vi /var/lib/pgsql/13/data/postgresql.conf**
+	2. Add the customized postgresql.local.conf with the following screenshot.
+	![]()
+	3. To add customized postgresql.local.conf, we have to open the file and paste specifics configs from pgtune URL:
+	**vi /var/lib/pgsql/13/data/postgresql.local.conf**
+	4. **pgbench -j 4 -T 120  -c 20 bench**
+	5. **systemctl restart postgresql-13**
+	
+### Installing pg_stat_statements
+1. The most useful Postgres extension: pg_stat_statements
+1. **The module must be loaded by adding pg_stat_statements to shared_preload_libraries in postgresql.conf**
+2. **psql databasename**
+3. **CREATE EXTENSION pg_stat_statements**
+4. **systemctl restart postgresql-13**
+
+
+
+
 
 
