@@ -67,22 +67,22 @@
 			2. **pgbench -T 120 -j 2 -c 20 -S bench**
 			3. **pgbench -j 4 -T 120  -c 20 bench**
 2. How to display config file and maximum connections etc ... of postgresql on Linux
-	1. ** psql dbname -c "show config_file"**
-	2. ** psql testdb -c "show config_file"**
-	3. ** psql testdb -c "show max_connections"**
-	4. ** psql testdb -c "show shared_buffers"**
+	1. **psql dbname -c "show config_file"**
+	2. **psql testdb -c "show config_file"**
+	3. **psql testdb -c "show max_connections"**
+	4. **psql testdb -c "show shared_buffers"**
 	
 ## Configuration Tweaks 
 ### Configuration calculator for PostgreSQL
-[Parameters of your system](https://pgtune.leopard.in.ua/#/)
-	1. edit the following path where postgresql.conf is
+	1. [Parameters of your system](https://pgtune.leopard.in.ua/#/)
+	2. edit the following path where postgresql.conf is
 	**vi /var/lib/pgsql/13/data/postgresql.conf**
-	2. Add the customized postgresql.local.conf with the following screenshot.
+	3. Add the customized postgresql.local.conf with the following screenshot.
 	![]()
-	3. To add customized postgresql.local.conf, we have to open the file and paste specifics configs from pgtune URL:
+	4. To add customized postgresql.local.conf, we have to open the file and paste specifics configs from pgtune URL:
 	**vi /var/lib/pgsql/13/data/postgresql.local.conf**
-	4. **pgbench -j 4 -T 120  -c 20 bench**
-	5. **systemctl restart postgresql-13**
+	5. **pgbench -j 4 -T 120  -c 20 bench**
+	6. **systemctl restart postgresql-13**
 	
 ### Installing pg_stat_statements
 1. The most useful Postgres extension: pg_stat_statements
