@@ -74,7 +74,7 @@
 	
 ## Configuration Tweaks 
 ### Configuration calculator for PostgreSQL
-####[Parameters of your system](https://pgtune.leopard.in.ua/#/)
+#### [Parameters of your system](https://pgtune.leopard.in.ua/#/)
 	1. edit the following path where postgresql.conf is
 		**vi /var/lib/pgsql/13/data/postgresql.conf**
 	2. Add the customized postgresql.local.conf with the following screenshot.
