@@ -89,8 +89,10 @@
 1. **The module must be loaded by adding pg_stat_statements to shared_preload_libraries in postgresql.conf**
 2. **psql databasename**
 3. **CREATE EXTENSION pg_stat_statements;**
-4. **systemctl restart postgresql-13**
-
+4. ![]()
+5. **systemctl restart postgresql-13**
+6. **SELECT * FROM pg_stat_statements;**
+7. **SHOW config_file;**
 
 
 
