@@ -36,7 +36,49 @@
 ![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/readme.png)
 	1. **# m h dom mon dow  command**
 	2. **0 0 * * * root pg_dump -Fc testdb > backup/back.bk** 
-4.  
+4. Automated Backup on Linux 
+[Automated Backup on Linux Reference link for more details to customize it](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux)
+	1. crontab scripts
+	**# CRON table for postgres user.
+	 
+	# run backup every night at 22:00 hours (10PM)
+	0 22 * * * /var/lib/pgsql/backups/backup.sh database_name
+	 
+	# run backup every week at midnight hour on sunday
+	0 0 * * 0 /var/lib/pgsql/backups/backup.sh**
+	![]()
+	2. backup.sh scripts
+	**#!/bin/bash
+	# This script will backup the postgresql database
+	# and store it in a specified directory
+	 
+	# PARAMETERS
+	# $1 database name (if none specified run pg_dumpall)
+	 
+	# CONSTANTS
+	# postgres home folder backups directory
+	# !! DO NOT specify trailing '/' as it is included below for readability !!
+	BACKUP_DIRECTORY="/var/lib/pgsql/backups"
+	 
+	# Date stamp (formated YYYYMMDD)
+	# just used in file name
+	CURRENT_DATE=$(date "+%Y%m%d")
+	 
+	# !!! Important pg_dump command does not export users/groups tables
+	# still need to maintain a pg_dumpall for full disaster recovery !!!
+	 
+	# this checks to see if the first command line argument is null
+	if [ -z "$1" ]
+	then
+	# No database specified, do a full backup using pg_dumpall
+	pg_dumpall | gzip - > $BACKUP_DIRECTORY/pg_dumpall_$CURRENT_DATE.sql.gz
+	 
+	else
+	# Database named (command line argument) use pg_dump for targed backup
+	pg_dump $1 | gzip - > $BACKUP_DIRECTORY/$1_$CURRENT_DATE.sql.gz
+	 
+	fi**
+	![]()
 
 
 
