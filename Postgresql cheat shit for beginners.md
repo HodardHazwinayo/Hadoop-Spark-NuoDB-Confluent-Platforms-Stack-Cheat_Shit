@@ -79,6 +79,8 @@
 	 
 	fi**
 	![]()
+	3. How to add backup.sh scripts under terminal
+
 
 
 
