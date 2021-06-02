@@ -46,7 +46,10 @@
 	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/addbackupscript.png)
 	4. Run the following commands **vi /backup/backup.sh** and **source /backup/backup.sh** 
 	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/scripts.png)
-
+	5. To test if the backup is going well
+	![]()
+	6. Edit crontab for taking daily and weekly backup on sunday at mid night: dow means day of week.
+	![]()
 
 
 
