@@ -39,13 +39,13 @@
 4. Automated Backup on Linux 
 [Automated Backup on Linux Reference link for more details to customize it](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux)
 	1. crontab scripts
-	![]()
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/crontab.png)
 	2. backup.sh scripts
-	![]()
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/backupshellscript.png)
 	3. How to add backup.sh scripts under terminal
-	![]()
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/addbackupscript.png)
 	4. Run the following commands **vi /backup/backup.sh** and **source /backup/backup.sh** 
-	![]()
+	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/scripts.png)
 
 
 
