@@ -74,15 +74,15 @@
 	
 ## Configuration Tweaks 
 ### Configuration calculator for PostgreSQL
-#### [Parameters of your system](https://pgtune.leopard.in.ua/#/)
-	1. edit the following path where postgresql.conf is
+1. [Parameters of your system](https://pgtune.leopard.in.ua/#/)
+2. edit the following path where postgresql.conf is
 		**vi /var/lib/pgsql/13/data/postgresql.conf**
-	2. Add the customized postgresql.local.conf with the following screenshot.
+3. Add the customized postgresql.local.conf with the following screenshot.
 		![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/postgresqllocalconf.png)
-	3. To add customized postgresql.local.conf, we have to open the file and paste specifics configs from pgtune URL:
+4. To add customized postgresql.local.conf, we have to open the file and paste specifics configs from pgtune URL:
 		**vi /var/lib/pgsql/13/data/postgresql.local.conf**
-	4. **pgbench -j 4 -T 120  -c 20 bench**
-	5. **systemctl restart postgresql-13**
+5. **pgbench -j 4 -T 120  -c 20 bench**
+6. **systemctl restart postgresql-13**
 	
 ### Installing pg_stat_statements
 1. The most useful Postgres extension: pg_stat_statements
