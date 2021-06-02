@@ -52,7 +52,19 @@
 	![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/crontabfordailyandweekly.png)
 	7. References for the backup scripts in details
 		1. [Automatic cron backup of PostgreSQL database](https://txcowboycoder.wordpress.com/2011/06/03/automatic-cron-backup-of-postgresql-database/)
-		2  [Automated Backup on Linux](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux)
-## 
+		2. [Automated Backup on Linux](https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux)
+		
+## Understanding your server
+### Using pgbench
+1. Create pgbench db and initiaze it using the followings commands:
+	1. **createdb bench**
+	2. **pgbench -i bench**
+	3. ![]()
+	4. Tu run pgbench database, lets use our usual example:
+		1. **pgbench bench**
+		2. Initialize the number of scale factor of approximately 10 thousands users or connections for only reading.
+			1. **pgbench -i -S 100 bench**
+			2. **pgbench -T 120 -j 2 -c 20 -S bench**
+2. 
 
 
