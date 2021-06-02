@@ -11,7 +11,7 @@
 7. [Postgres Installation process in Centos7/8](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Postgres%20Installation%20Latest%20version_13.md)
 8. [Advanced Postgres Configurations and allow Remote Access ](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Advanced%20Postgres%20Configurations%20and%20llow%20Remote%20Access.md)
 9. [Enable Remote MySQL Database Access to User from Remote Host](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/MySQL%20cheat%20shit.md)
-
+10. [Postgresql cheat shit for beginners]()
 
 # Good Luck
 
