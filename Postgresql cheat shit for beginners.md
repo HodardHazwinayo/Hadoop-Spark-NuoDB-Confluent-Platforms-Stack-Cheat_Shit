@@ -33,7 +33,7 @@
 2. On Linux, there is built-in option to schedule a jobs
 **crontab -e**
 3. Take daily backup at mid night, please check on the following scripts and use yours accordingly
-![](C:\Users\hhazwinayo\Documents\SIT%20&%20UAT%20TDL_T24_TA%20Environment\Big%20Data%20Stack%20Cheat%20Shit\Images\readme.png) 
+![](https://github.com/HodardHazwinayo/Hadoop-Spark-NuoDB-Confluent-Platforms-Stack-Cheat_Shit/blob/master/Images/readme.png) 
 4.  
 
 
